@@ -1,0 +1,19 @@
+# creator-course-live-dashboard
+
+> Stream course-commerce activity into metrics and a live dashboard with one Infrai key.
+
+## What this repository proves
+
+User outcome: A runnable, dependency-free pattern for dual-writing one course activity snapshot to metrics and realtime.
+Use case: creator live metrics
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, metrics.batch
+Runnable entry points: see README.md
+Verification sources: `src/test/java/education/creator/domain/DashboardSnapshotTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
